@@ -1,19 +1,40 @@
 {
   "name": "ruler",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test Library with Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "tsc -p src -w",
+    "build": "rm -rf dist && tsc -p src",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pureye4u/ruler.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "pureye4u",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/pureye4u/ruler/issues"
   },
-  "homepage": "https://github.com/pureye4u/ruler#readme"
+  "homepage": "https://github.com/pureye4u/ruler#readme",
+  "publishConfig": {
+    "registry": "http://29cm.cf:4873/"
+  },
+  "dependencies": {
+    "typescript": "2.3.2"
+  },
+  "devDependencies": {
+    "@angular/common": "4.0.3",
+    "@angular/compiler": "4.0.3",
+    "@angular/core": "4.0.3",
+    "@angular/http": "4.0.3",
+    "@angular/platform-browser": "4.0.3",
+    "@angular/platform-browser-dynamic": "4.0.3",
+    "rxjs": "5.3.0",
+    "zone.js": "0.8.4"
+  },
+  "publishConfig": {
+      "registry": "http://29cm.cf:4873/"
+  }
 }
