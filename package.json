@@ -1,8 +1,7 @@
 {
   "name": "ruler",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Test Library with Typescript",
-  "main": "index.js",
   "scripts": {
     "watch": "tsc -p src -w",
     "build": "rm -rf dist && tsc -p src",
